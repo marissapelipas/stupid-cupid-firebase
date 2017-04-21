@@ -1,0 +1,68 @@
+<div class="profile_banner">
+  <div class="container">
+    <h3>Search</h3>
+  </div>
+</div>
+<!--<div class="search wow bounceInUp" data-wow-delay="0.4s">-->
+<!--<h3>Looking for someone? </h3>-->
+<!--<form (submit)="onSubmit(f)" #f="ngForm">-->
+<!--<span>-->
+<!--<div class="search-box">-->
+<!--<i class="search-icon"> </i>-->
+<!--<input type="text" name="searchField" class="form-control" value="Type something here..." ngModel="searchField"-->
+<!--onfocus="this.value = '';"-->
+<!--onblur="if (this.value == '') {this.value = 'Type something here...';}"-->
+<!--&gt;-->
+<!--</div>-->
+<!--&lt;!&ndash;<input type="submit" id="submit" value="Search" click="{return false}">&ndash;&gt;-->
+<!--<button type="submit" class="btn btn-primary" value="Search">Search</button>-->
+<!--</span>-->
+<!--<div class="clearfix"></div>-->
+<!--</form>-->
+<!--</div>-->
+<br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Looking for someone? </h2>
+    </div>
+  </div>
+  <div class="row">
+    <form (submit)="onSubmit(f)" #f="ngForm">
+    <div class="col-md-10">
+      <div class="input-group">
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">Firstname <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Firstname</a></li>
+            <li><a href="#">Lastname</a></li>
+            <li><a href="#">Gender</a></li>
+            <li><a href="#">Country</a></li>
+          </ul>
+        </div><!-- /btn-group -->
+        <input type="text" name="searchField" ngModel="{{searchField}}" placeholder="Type here..." class="form-control" aria-label="...">
+
+      </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+    <div class="col-md-2">
+      <button type="submit" class="btn btn-primary" value="Search">Search</button>
+      <!--<button type="button" class="btn btn-primary" (click)="whosOnline()">Who's Online</button>-->
+
+    </div>
+    </form>
+  </div>
+</div>
+<br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <app-search-item
+        *ngFor="let profile of profiles; let i = index"
+        [profile]="profile"
+        [index]="i"></app-search-item>
+    </div>
+  </div>
+</div>
+<br>
+<br>

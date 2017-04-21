@@ -1,0 +1,104 @@
+<!--<div class="container">-->
+<!--<div class="col-md-8 profile_left">-->
+<!--<div class="lsidebar span_1_of_profile">-->
+<!--<div id="profileImgDiv" class="grid_4">-->
+<!--<img id="profileImg" src="{{profile.avatarUrl}}" class="img-responsive" />-->
+
+<!--<ul class="category_desc1">-->
+<!--<li class="cate_head">1.100 votes</li>-->
+<!--<li class="cate_right">-->
+<!--<ul class="list1">-->
+<!--<li><a href="#"><i class="heart"> </i></a></li>-->
+<!--<li><a href="#"><i class="heart"> </i></a></li>-->
+
+<!--</ul>-->
+<!--</li>-->
+<!--<div class="clearfix"></div>-->
+<!--</ul>-->
+<!--</div>-->
+<!--<div class="cont span_2_of_profile">-->
+<!--<h4><a href="#">{{profile.lastname}}, {{profile.firstname}}</a></h4>-->
+<!--<table class="profile-fields">-->
+<!--<tbody>-->
+<!--<tr>-->
+<!--<th>Gender</th>-->
+<!--<td>{{profile.gender}}</td>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<th>Age</th>-->
+<!--<td>{{profile.age}}</td>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<th>Country</th>-->
+<!--<td>{{profile.country}}</td>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<th>City</th>-->
+<!--<td>{{profile.city}}</td>-->
+<!--</tr>-->
+<!--</tbody>-->
+<!--</table>-->
+<!--<p>{{profile.description}}</p>-->
+
+<!--</div>-->
+
+<!--<div class="clearfix"></div>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--</div>-->
+<!--//-->
+<a
+  href="#"
+  style="cursor: pointer;"
+  [routerLink]="[index]"
+  routerLinkActive="active"
+  class="list-group-item clearfix">
+  <div class="container">
+    <div class="col-md-8 profile_left">
+      <div class="lsidebar span_1_of_profile">
+        <div class="grid_4">
+          <img src="{{profile.avatarUrl}}" class="img-responsive" alt=""/>
+          <ul class="category_desc1">
+            <li class="cate_head">1.100 votes</li>
+            <li class="cate_right">
+              <ul class="list1">
+                <li><a href="#"><i class="heart"> </i></a></li>
+                <li><a href="#"><i class="heart"> </i></a></li>
+
+              </ul>
+            </li>
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+      </div>
+      <div class="cont span_2_of_profile">
+        <h4><a href="#">{{profile.lastname}}, {{profile.firstname}}</a></h4>
+        <table class="profile-fields">
+          <tbody>
+          <tr>
+            <th>Gender</th>
+            <td>{{profile.gender}}</td>
+          </tr>
+          <tr>
+            <th>Age</th>
+            <td>{{profile.age}}</td>
+          </tr>
+          <tr>
+            <th>Country</th>
+            <td>{{profile.country}}</td>
+          </tr>
+          <tr>
+            <th>City</th>
+            <td>{{profile.city}}</td>
+          </tr>
+          </tbody>
+        </table>
+        <p>{{profile.description}}</p>
+
+      </div>
+
+    </div>
+  </div>
+</a>
+<br>

@@ -1,0 +1,28 @@
+<div class="lsidebar span_1_of_profile">
+  <input id="profileImgDiv-upload" #myname type="file" class="hidden" (change)="onChangeFile($event)"/>
+  <div id="profileImgDiv" class="grid_4">
+    <img id="profileImg" src="{{profileImgUrl}}" class="img-responsive"
+         title="click here to change profile image"
+         alt="click here to change profile image"
+         style="cursor: pointer;"
+         (click)="myname.click()"/>
+
+    <ul class="category_desc1">
+      <li class="cate_head">1.100 votes</li>
+      <li class="cate_right">
+        <ul class="list1">
+          <li><a href="#"><i class="heart"> </i></a></li>
+          <li><a href="#"><i class="heart"> </i></a></li>
+
+        </ul>
+      </li>
+      <div class="clearfix"></div>
+    </ul>
+  </div>
+
+
+  <!--<button class="btn btn-primary" type="button">-->
+  <!--Messages <span class="badge">4</span>-->
+  <!--</button>-->
+</div>
+

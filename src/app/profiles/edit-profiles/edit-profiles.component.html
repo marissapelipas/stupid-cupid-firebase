@@ -1,0 +1,59 @@
+<div class="cont span_2_of_profile">
+  <h4><a href="#">{{profile.lastname}}, {{profile.firstname}}</a></h4>
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <input type="hidden" ngModel="{{profile.id}}" name="id" >
+    <input type="hidden" ngModel="{{profile.email}}" name="email" >
+    <table class="profile-fields">
+      <tbody>
+      <tr>
+        <th>Firstname: </th>
+        <td><input type="text" id="firstname" name="firstname" ngModel="{{profile.firstname}}" class="form-control" required #firstname="ngModel"></td>
+      </tr>
+      <tr>
+        <th>Lastname: </th>
+        <td><input type="text" id="lastname" name="lastname" ngModel="{{profile.lastname}}" class="form-control" required #lastname="ngModel"></td>
+      </tr>
+      <tr>
+        <th>Gender: </th>
+        <td>
+          <input type="radio" name="gender" value="Male" ngModel="{{profile.gender}}"  >&nbsp;&nbsp;Male&nbsp;&nbsp;
+          <input type="radio" name="gender" value="Female" ngModel="{{profile.gender}}" >&nbsp;&nbsp;Female
+        </td>
+      </tr>
+      <tr>
+        <th>Age: </th>
+        <td><input type="number" id="age" name="age" ngModel="{{profile.age}}" class="form-control" required #age="ngModel"></td>
+      </tr>
+      <tr>
+        <th>Country</th>
+        <td><select name="country" id="country" ngModel="{{profile.country}}" class="form-control" required>
+              <option *ngFor="let country of countries" value="{{country}}">{{country}}</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <th>City: </th>
+        <td><input type="text" id="city" name="city" ngModel="{{profile.city}}" class="form-control" required #city="ngModel"></td>
+      </tr>
+      <tr>
+      <tr>
+        <th>Description: </th>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="2"><textarea  id="description" name="description" ngModel="{{profile.description}}" class="form-control"
+                       required #description="ngModel"
+                       rows="8" ></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <button type="button" (click)="onCancel()" class="btn btn-default" >Cancel</button>
+          <button type="submit" class="btn btn-primary" >Submit</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </form>
+</div>

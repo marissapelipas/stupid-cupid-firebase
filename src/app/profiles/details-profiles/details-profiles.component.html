@@ -1,0 +1,25 @@
+<div class="cont span_2_of_profile">
+  <h4><a href="#">{{profile.lastname}}, {{profile.firstname}}</a> &nbsp;&nbsp;(<a (click)="onEdit()" style="cursor: pointer;" >Edit</a>)</h4>
+  <table class="profile-fields">
+    <tbody>
+    <tr>
+      <th>Gender</th>
+      <td>{{profile.gender}}</td>
+    </tr>
+    <tr>
+      <th>Age</th>
+      <td>{{profile.age}}</td>
+    </tr>
+    <tr>
+      <th>Country</th>
+      <td>{{profile.country}}</td>
+    </tr>
+    <tr>
+      <th>City</th>
+      <td>{{profile.city}}</td>
+    </tr>
+    </tbody>
+  </table>
+  <p>{{profile.description}}</p>
+
+</div>

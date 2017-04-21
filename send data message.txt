@@ -1,0 +1,22 @@
+url
+https://fcm.googleapis.com/fcm/send
+
+headers-
+Content-Type:application/json
+Authorization:key=AAAALh8c00I:APA91bFsAq-Qv-PLXPfkK7D9nhKnolN53XQKOaS_LOMVOEoUsr7tUgtZP5A-uFMV-S5M_qOnrmXX4L7Hw6tcHruAWfqQBdQh11AQ676CWZVQzQrsJtza0Pi0toWhMf2-6anXQctyNnMu
+
+
+notification-
+{ "notification": {
+    "title": "Portugal vs. Denmark",
+    "body": "5 to 1"
+  },
+  "to" : "cw8e1AhBdWE:APA91bGMLLYCdvH9rNnjOr7oehigMMURorPAIyh8Hb0_mtzMZbbbjWVlbDzW7BJTnW9SAfi-xCTkOknvTK8fiEH_GRHa5hP39b6V0byN_mqFm3AyPtQFxFc9M5BPCCo7IyVKpNJZCsnQ"
+}
+-or-
+{ "data": {
+    "status": "It Workds",
+    "body": "5 to 1"
+  },
+  "to" : "cw8e1AhBdWE:APA91bGMLLYCdvH9rNnjOr7oehigMMURorPAIyh8Hb0_mtzMZbbbjWVlbDzW7BJTnW9SAfi-xCTkOknvTK8fiEH_GRHa5hP39b6V0byN_mqFm3AyPtQFxFc9M5BPCCo7IyVKpNJZCsnQ"
+}

@@ -1,0 +1,41 @@
+<div class="header">
+  <div class='container'>
+    <div class="header_left">
+      <img src="../assets/images/rate.png" alt=""/>
+    </div>
+    <div class="logo">
+      <a href="index.html"><img src="../assets/images/logo.png" alt=""/>
+        <span>Soulmate</span>
+      </a>
+    </div>
+    <ng-template [ngIf]="authService.isAuthenticated()">
+      <div class="header_right" >
+        <li style="list-style-type: none; align-items: right; horiz-align: right;" class="dropdown" appDropdown>
+          <img  style="width: 85px; height: 70px;" class="img-thumbnail" src="{{profileImgUrl}}" alt="" class="img-responsive"/>
+          <ul class="dropdown-menu">
+            <li><a (click)="gotToProfile()">Profile</a></li>
+            <li><a (click)="gotToSearch()">Search</a></li>
+            <li><a (click)="gotToWhosOnline()">Who's Online</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a (click)="onLogout()" >Logout</a>
+          </ul>
+        </li>
+      </div>
+    </ng-template>
+    <ng-template [ngIf]="!authService.isAuthenticated()">
+      <div class="header_right" >
+        <ul class="header_user_info">
+          <a class="login" routerLink="/signin">
+            <li class="user_desc"><span class="m_1">Already user ? </span>Login</li>
+            <i class="user"> </i>
+            <div class="clearfix"> </div>
+          </a>
+          <div class="clearfix"> </div>
+        </ul>
+        <a routerLink="/signup" class="btn1 btn-1 btn1-1b">Sign Up</a>
+      </div>
+      <div class="clearfix"> </div>
+    </ng-template>
+
+    </div>
+</div>
