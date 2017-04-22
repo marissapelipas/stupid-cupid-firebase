@@ -3,7 +3,7 @@ Stupid Cupid is a dating application.
 Technologies: Angular 2, Nodejs and Firebase.
 
 Features: 
-- Login Authentication using JWTs
+- Login Authentication using Firebase JWT
 - Registration
 - Manage Profile/Edit
 - Add avatar
