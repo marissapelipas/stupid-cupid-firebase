@@ -8,6 +8,7 @@ Features:
 - Who's Online/Presence System
 - Search by Firstname
 - Password reset
+
 TODOS:
 - Private message
 - Ratings
